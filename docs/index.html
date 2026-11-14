@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Countdown Lock Screens</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #f4f2ee; --fg: #1d1b18; --muted: #6b665e; }
+@media (prefers-color-scheme: dark) { :root { --bg: #141311; --fg: #f1eee8; --muted: #a39d93; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 Inter, system-ui, sans-serif; }
+main { max-width: 1100px; margin: 0 auto; padding: 48px 16px 64px; }
+h1 { font-size: clamp(32px, 6vw, 52px); margin: 0 0 8px; letter-spacing: -0.02em; }
+p { color: var(--muted); max-width: 640px; margin: 0 0 36px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+.card { color: inherit; text-decoration: none; display: grid; gap: 6px; }
+.card img { width: 100%; height: auto; border-radius: 14px; }
+.card span { color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Countdown lock screens</h1>
+<p>Three iPhone lock screens that change every day until a real deadline: finals, and a move to Chicago. Pick one to see the full run and set it up.</p>
+<div class="cards"><a class="card" href="three-rounds/"><img src="three-rounds/cover.jpg" alt="Three Rounds cover" width="1800" height="1200"><b>Three Rounds</b><span>A finals countdown served like an Ethiopian coffee ceremony. One cup fills per round.</span></a>
+<a class="card" href="chicago/"><img src="chicago/cover.jpg" alt="City Lights cover" width="1800" height="1200"><b>City Lights</b><span>Counting down to day one in Chicago. Every day another window in the skyline comes on.</span></a>
+<a class="card" href="merge-to-main/"><img src="merge-to-main/cover.jpg" alt="Merge to Main cover" width="1800" height="1200"><b>Merge to Main</b><span>Fall term as a GitHub pull request. Each day is a commit; finals are the merge.</span></a></div>
+</main>
+</body>
+</html>
